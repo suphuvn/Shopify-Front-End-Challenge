@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<h1 class="header">Stay up to date with ecommerce trends with Shopify's newsletter</h1>
+	<h1 class="line">___</h1>
+	&nbsp;
+	<h2 class="header-2">Subscribe for free marketing tips</h2>
+	<form method="post" name="myemailform">
+		<p>
+			<input class="input-box" type="email" id="email" placeholder="Email Address" > 
+				<select class="drop-box" name="decision" placeholder="Interested In" id="interest">
+					<option value="" style="color:#808080;" disabled selected>Interested In...</option>
+					<option>Plan 1</option>
+					<option>Plan 2</option>
+					<option>Plan 3</option>
+					<option>Plan 4</option>
+					<option>Plan 5</option>s
+				</select>
+		</p>
+
+	</form>
+
+	<p class="message" id="message"></p>
+
+	<script>
+	function myFunction() {
+	    var email = document.getElementById("email").value; 
+
+	   	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  		var thing = re.test(email);
+
+        if (!thing) {
+        	document.getElementById("message").innerHTML = "Please enter a valid email address";
+        	document.getElementById("confirm").innerHTML = "";
+
+        }
+
+        else {
+        	console.log("Email: " + document.getElementById("email").value);
+        	console.log("Interest: " + document.getElementById("interest").value);
+
+        	document.getElementById("email").value = "";
+        	document.getElementById("interest").value = "";
+        	document.getElementById("message").innerHTML = "";
+        	document.getElementById("confirm").innerHTML = "Success! You're registered!";
+
+
+        }
+	    
+	}
+	</script>
+
+	<button onclick="myFunction()" class="button">Sign up now</button>
+
+	<p class="confirm" id="confirm"></p>
+
+	<<div class="button-2" style="position: relative">
+        <p style="position: fixed; bottom: 0; width:100%; text-align: center"> <a href="#" style="font-family: 'Helvetica'"><font color="FFFFFF">Unsubscribe</a>
+        </p>
+    </div>
+</body>
+
+</html>
