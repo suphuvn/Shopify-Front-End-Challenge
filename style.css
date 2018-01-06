@@ -1,0 +1,83 @@
+html {
+	background-color: #000639;
+}
+
+.header {
+	margin-left: 160px;
+	margin-right: 160px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-top: 80px;
+	font-size: 24px;
+}
+
+hr {
+	background-color: #7AB55C;
+	border-color: #7AB55C;
+	font-weight: bold;
+	margin-left: 160px;
+	width: 2%;
+}
+
+.header-2 {
+	color: #FFFFFF;
+	font-family: 'Helvetica';
+	margin-left: 160px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.wrapper .input-box {
+	margin-left: 160px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 1px;
+    border-radius: 8px;
+    width: 40%;
+    font-size: 16px;
+}
+
+.wrapper .drop-box {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	width: 21%;
+	font-size: 16px;
+	color: #808080;
+	position: relative;
+}
+
+.button {
+	border-radius: 8px;
+	border: none;
+	background-color: #5c6ac4;
+	color: #FFFFFF;
+	text-align: center;
+	margin-left: 160px;
+	width: 62%;
+	font-size: 16px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.message {
+	font-family: 'Helvetica';
+	font-weight: bold;
+	color: red;
+	text-indent: 160px;
+}
+
+.confirm {
+	font-family: 'Helvetica';
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.wrapper {
+  position: relative;
+
+}
